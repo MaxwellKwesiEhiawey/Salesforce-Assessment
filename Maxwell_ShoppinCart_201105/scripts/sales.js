@@ -76,7 +76,7 @@ class ShoppingCart extends Component {
     const cartEl = this.createRootElement('section', 'cart');
     cartEl.innerHTML = `
       <h2>Total: \$${0}</h2>
-      <button>Order Now!</button>
+      <button>Order!</button>
     `;
     const orderButton = cartEl.querySelector('button');
     orderButton.addEventListener('click', this.orderProducts);
@@ -92,7 +92,7 @@ class ProductItem extends Component {
   }
 
   addToCart() {
-    App.addItemsToCart(this.product);
+    App.addProductToCart(this.product);
   }
 
   render() {
@@ -125,10 +125,14 @@ class ProductList extends Component {
   fetchProducts() {
     this.#products = [
       new Items(
-        'Luxurious Car',
-        'https://tricklearn.com/wp-content/uploads/2019/10/Expensive-car.jpg',
-        'Most Luxurious Car You Would Love!',
+        'Luxurious Cars',
+        'https://www.graphic.com.gh/images/2019/feb/19/cars_compressed.jpg',
+        
+        'Most Luxurious Cars You Would Love!',
         99.89 + ' M'
+      ),
+      new Items ( 'Golden Type',
+        'https://tricklearn.com/wp-content/uploads/2019/10/Expensive-car.jpg', 'Golden Luxurious',  199.79 + ' M'
       ),
       new Items(
         'Christmas Hamper',
@@ -136,13 +140,14 @@ class ProductList extends Component {
         'Christmas Hamper You cannot resist.',
         29.76
       ),
+      
       new Items ( 'Affordable Homes', 'https://www.agentimage.com/wp-content/uploads/2020/01/banner-photo-30-best-white-min.png', 'Cool Priced Homes', 3599.89
       ),
       new Items( 'Interior Decor Package', 'https://cdn.decorilla.com/online-decorating/wp-content/uploads/2018/03/hygge-home-decor-natural-light-1024x683.jpg', 'Interior Decor Package', 679.89
        ),
        new Items(
          'Complete IT Equipments & Accesories', 'https://1.bp.blogspot.com/-5dhQCx47ZRc/W6DS0H3VZtI/AAAAAAAAJgw/wBVfJGxH0qo6QhXdLQ9SSICL_bVdDZGAgCLcBGAs/s640/Computer-hardware-components.jpg',
-         'Quality IT Equipments & Accesories Set',289.49, 
+         'Quality IT Equipments & Accesories Set', 289.49, 
        )
     ];
     this.renderProducts();

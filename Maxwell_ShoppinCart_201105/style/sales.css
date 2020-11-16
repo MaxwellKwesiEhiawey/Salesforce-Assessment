@@ -1,12 +1,12 @@
 section{ 
-  background-color:#e2dcb9;
+  background-color:#dbd8c6;
   color: orangered;
   font-weight: bolder;
   background-size: 20rem;
+  background-position:center;
+  margin: 10px auto;
   background-position: center;
-  margin: 20px auto;
-  background-position: center;
-  width: 800px;border: 1px solid #bb5d2775;
+  width: 600px;border: 2px solid #bb5d2775;
 
 }
 
@@ -17,10 +17,10 @@ html {
 
 header {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 4;
+  left: 2;
   height: 4rem;
-  width: 60%;
+  width: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
