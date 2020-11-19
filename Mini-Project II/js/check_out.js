@@ -3,7 +3,7 @@ $(document).ready(function(){
   var cartItem = localStorage.getItem("cartItem");
   console.log("cartItem: ",cartItem);
   if(cartItem === null){
-    $('#shoppingList').append('<p>You nave not selected any items yet</p>')
+    $('#shoppingList').append('<p>Thanks for choosing MaxCart!!  You have not selected any item yet; please select one first!</p>')
   }else{
     var cartObj = JSON.parse(cartItem);
     var ul = $('#shoppingList ul');
