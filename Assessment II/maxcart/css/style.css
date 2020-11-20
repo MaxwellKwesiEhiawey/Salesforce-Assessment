@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html, body{
     font-size: 100%;
-	background:	rgb(230, 235, 247);
+	background:	rgb(234, 238, 248);
 	font-family:'Open Sans', sans-serif;
 }
 p{
@@ -879,7 +879,7 @@ li.w3pages .dropdown-menu > li > a:hover{
     width: 15px;
     height: 15px;
     display: block;
-    background: #ff0000;
+    background: #1a001d;
     margin: 0 auto .5em;
 	border-radius: 25px;
 	-webkit-border-radius: 25px;
@@ -894,7 +894,7 @@ li.w3pages .dropdown-menu > li > a:hover{
     background: #840084;
 }
 .color-quality ul li a.gray span {
-    background: #ff00ff;
+    background: #ff0000;
 }
 /*-- //banner-bottom --*/
 /*-- special-deals --*/
