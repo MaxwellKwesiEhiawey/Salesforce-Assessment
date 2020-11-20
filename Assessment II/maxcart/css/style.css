@@ -6,7 +6,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 html, body{
     font-size: 100%;
-	background:	rgb(234, 238, 248);
+	background:	rgb(245, 246, 248);
 	font-family:'Open Sans', sans-serif;
 }
 p{
@@ -2715,7 +2715,7 @@ h2.typoh2{
     margin: 0;
 }
 .description p{
-	color: #999;
+	color: rgb(129, 11, 11);
     line-height: 1.8em;
     margin: 1em 0 0;
 }
