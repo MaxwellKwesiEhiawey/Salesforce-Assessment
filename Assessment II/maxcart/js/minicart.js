@@ -2376,6 +2376,7 @@ var currencies = {
     EEK: { before: 'kr' },
     EUR: { before: '\u20AC' },
     GBP: { before: '\u00A3' },
+    GHS: { before: 'GH¢'},
     GTQ: { before: 'Q' },
     HKD: { before: '$', code: true },
     HRK: { before: 'kn' },
@@ -2418,7 +2419,7 @@ var currencies = {
 
 
 module.exports = function currency(amount, config) {
-    var code = config && config.currency || 'USD',
+    var code = config && config.currency || 'GHS',
         value = currencies[code],
         before = value.before || '',
         after = value.after || '',
